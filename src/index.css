@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Navy blue from logo */
+    --background: 224 35% 20%;
+    --foreground: 150 50% 95%;
+
+    --card: 224 35% 24%;
+    --card-foreground: 150 50% 95%;
+
+    --popover: 224 35% 22%;
+    --popover-foreground: 150 50% 95%;
+
+    /* Mint green from logo */
+    --primary: 150 60% 65%;
+    --primary-foreground: 224 35% 15%;
+
+    --secondary: 224 30% 30%;
+    --secondary-foreground: 150 50% 90%;
+
+    --muted: 224 25% 28%;
+    --muted-foreground: 220 15% 60%;
+
+    --accent: 150 55% 55%;
+    --accent-foreground: 224 35% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 224 25% 30%;
+    --input: 224 25% 28%;
+    --ring: 150 60% 65%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --navy-deep: 224 40% 15%;
+    --mint-glow: 150 70% 75%;
+    --mint-soft: 150 40% 85%;
+
+    /* Shadows and effects */
+    --shadow-glow: 0 0 60px hsl(150 60% 65% / 0.15);
+    --shadow-card: 0 8px 32px hsl(224 40% 10% / 0.4);
+
+    /* Sidebar - keeping defaults */
+    --sidebar-background: 224 35% 18%;
+    --sidebar-foreground: 150 50% 90%;
+    --sidebar-primary: 150 60% 65%;
+    --sidebar-primary-foreground: 224 35% 15%;
+    --sidebar-accent: 224 30% 25%;
+    --sidebar-accent-foreground: 150 50% 90%;
+    --sidebar-border: 224 25% 28%;
+    --sidebar-ring: 150 60% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  .glow-effect {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.5);
+}

@@ -3,25 +3,25 @@ import { ExternalLink, Github, Folder } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "Plataforma de comercio electrónico fullstack con carrito de compras, pagos integrados y panel de administración.",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      github: "#",
-      live: "#"
-    },
-    {
-      title: "Task Management App",
-      description: "Aplicación de gestión de tareas con funcionalidades de colaboración en tiempo real y notificaciones.",
-      tags: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
-      github: "#",
-      live: "#"
+      title: "Web Page",
+      description: "Servicio web corporativo para Transepicentro, una empresa de transporte turístico en Ecuador.",
+      tags: ["React", "TypeScript", "PostgreSQL", "Stripe"],
+      github: "https://github.com/daniesteb-DEV/tep-wba-web-transepicentro",
+      live: "https://www.transepicentro-ec.com/"
     },
     {
       title: "API REST Service",
       description: "Servicio de API RESTful escalable con autenticación JWT, rate limiting y documentación completa.",
-      tags: ["Express", "MongoDB", "Docker", "Redis"],
-      github: "#",
+      tags: ["Java", "Springboot", "MongoDB", "Docker", "Redis"],
+      github: "https://github.com/daniesteb-DEV/msa-backend-bank-challenge",
       live: "#"
+    },
+    {
+      title: "Sistema RP360",
+      description: "Sistema para la gestión de tramites en los registros de la propiedad y mercantil, optimizando procesos y mejorando la eficiencia.",
+      tags: ["Java", "JSF", "PostgreSQL", "JasperSoft", "Wildfly"],
+      github: "#",
+      live: "https://foru.rpmr.gob.ec/FolioReal-PROPIEDAD-Web/login.xhtml"
     }
   ];
 

@@ -35,7 +35,7 @@ const Hero = () => {
         {/* Social links */}
         <div className="flex items-center gap-6 mt-10 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
           <a 
-            href="https://github.com" 
+            href="https://github.com/daniesteb-DEV/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all duration-300 group"
@@ -44,16 +44,16 @@ const Hero = () => {
             <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/danielejimeneza/"
             target="_blank" 
             rel="noopener noreferrer"
             className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all duration-300 group"
             aria-label="LinkedIn"
           >
-            <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
+            <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform"/>
           </a>
           <a 
-            href="mailto:contact@example.com"
+            href="mailto:danielejimeneza@gmail.com"
             className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all duration-300 group"
             aria-label="Email"
           >
